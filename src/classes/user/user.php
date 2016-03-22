@@ -25,7 +25,7 @@ class User extends Bitrix24Entity
 	 */
 	public function current()
 	{
-		$result = $this->client->call('user.current', array('state' => $this->client->getSecuritySignSalt()));
+		$result = $this->client->call('user.current');
 		return $result;
 	}
 
